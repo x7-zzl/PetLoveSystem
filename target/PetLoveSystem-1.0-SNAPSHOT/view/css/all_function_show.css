@@ -1,0 +1,81 @@
+/*jsp里设置按钮或者表格的位置可以通过div进行调整
+用绝对定位还是要相对定位，参数如下：
+Relative 相对定位：left 和top
+position: relative;!*相对定位*!
+left:40px;!*在原来的位置向右移动*!
+top:100px;!*在原来的位置向下移动*!
+他的参照点是他原来位置
+Absolute 绝对定位：元素从原来的位置脱离，让出原来的空间，同时相对于他所
+存在的离自己最近的非标准流的盒子而言的
+position: absolute;!*绝对定位*!
+left:40px;!*在原来的位置向右移动*!
+top:100px;!*在原来的位置向下移动*!
+他的参照点是他原来位置*/
+
+/*兽医表格设置*/
+#veterina{
+    position: relative;
+    height: 0;
+    /*right: 250px;*/
+    bottom: 300px;
+    clear: both;
+}
+
+/*宠物主人信息功能的表格位置设置*/
+#master_size {
+    position: relative;
+    height: 0;
+    right: 350px;
+    bottom: 420px;
+    clear: both;
+}
+
+
+
+/*.btn {*/
+/*    padding: 7px 16px;*/
+/*    color: #03e9f4;*/
+/*    !*position: relative;*!*/
+/*    overflow: hidden;*/
+/*    text-transform: uppercase;*/
+/*    !*letter-spacing: 2px;*!*/
+/*    !*left: 25%;*!*/
+/*}*/
+
+/*按钮动态效果*/
+/*.btn:hover {*/
+/*    border-radius: 5px;*/
+/*    color: #fff;*/
+/*    background: #03e9f4;*/
+/*    box-shadow: 0 0 5px 0 #03e9f4,*/
+/*    0 0 25px 0 #03e9f4,*/
+/*    0 0 50px 0 #03e9f4,*/
+/*    0 0 100px 0 #03e9f4;*/
+/*    transition: all 1s linear;*/
+/*}*/
+
+body {
+    font-family: 华文楷体, serif;
+    background-image: url("../image/bj_7.png");
+    font-size: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4ff221;
+}
+
+table {
+    font-family: 华文楷体, serif;
+    font-size: 25px;
+    color: rgb(191, 101, 255)
+}
+
+
+/*超链接的样式设置*/
+.a{
+    text-decoration:none;  /*清除下划线  */
+    font-family: "宋体", serif;/*设置字体种类*/
+}

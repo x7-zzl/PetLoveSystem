@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*超链接的样式设置*/
+.a{
+    text-decoration:none;  /*清除下划线  */
+    font-family: "宋体", serif;/*设置字体种类*/
+    color: #00ff48;/*设置字体颜色*/
+    font-size: 21px;/*设置字体大小*/
+}
+
+
+/*!*表格设置*!*/
+/*.table {*/
+/*    border: 1px solid #000000;*/
+/*    border-collapse: collapse;*/
+/*    width:100%;*/
+/*}*/
+
+/*.table th {*/
+/*    border: 1px solid #000000;*/
+/*    border-collapse: collapse;*/
+/*}*/
+
+/*.table td {*/
+/*    border: 1px solid rgba(0, 0, 0, 0.87);*/
+/*    border-collapse: collapse;*/
+/*}*/
+
+/*设置用户信息在右上角的位置*/
+.topcorner {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+}
+
+/*设置一个类似于头像的圆*/
+.headPortrait {
+    border: 1px solid #3db8da;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    /*插入图片*/
+    background-image: url("../image/bj_head-image.png");
+    background-size: 30px 24px;
+
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+/*输入框设置*/
+input {
+    border: #17f22d;
+    border-radius: 3px;
+    padding: 13px 14px;
+}
+
+/*点击时发光*/
+input:focus {
+    border-color: rgb(102, 233, 161);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(229, 102, 233, 0.99);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(213, 102, 233)
+}
+
+/*输入样式*/
+.input_style {
+    height: 45px;
+    border-bottom: #f20008;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+body {
+
+    background-image: url("../image/bj_7.png");
+    font-size: 17px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*color: #4ff221;*/
+}
+
+
+/*登录界面*/
+.loginBox {
+    width: 400px;
+    height: 364px;
+    background-color: rgba(242, 201, 53, 0.18);
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: rgba(242, 201, 53, 0.18);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+input,
+button {
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #5df3ff;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: #03e9f4;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    left: 25%;
+}
+
+/*按钮动态效果*/
+.btn:hover {
+    border-radius: 5px;
+    color: #fff;
+    background: #03e9f4;
+    box-shadow: 0 0 5px 0 #03e9f4,
+    0 0 25px 0 #03e9f4,
+    0 0 50px 0 #03e9f4,
+    0 0 100px 0 #03e9f4;
+    transition: all 1s linear;
+}
+
